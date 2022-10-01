@@ -12,24 +12,12 @@ import org.junit.Test;
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
-
-    @Test
-    public void checkFirstName(){
+  
+	@Test
+    public void checkEmail(){
         UserRegistration ur=new UserRegistration();
-        assertEquals(true, ur.checkValidFirstName("Sarita"));
+		assertEquals(true, ur.checkValidEmail("ashhhhbida1991@gami.com"));
     }
-    @Test
-    public void checkLastName(){
-        UserRegistration ur=new UserRegistration();
-		assertEquals(true, ur.checkValidLastName("Shinde"));
-    }
+    
 
 }

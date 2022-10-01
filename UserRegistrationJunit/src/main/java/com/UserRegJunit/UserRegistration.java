@@ -3,24 +3,16 @@ package com.UserRegJunit;
 import java.util.regex.*;
 
 public class UserRegistration {
-	
-	public boolean checkValidFirstName(String firstName) {
+	public boolean checkValidEmail(String email) {
 
-     boolean isFirstName;
-	String firstNameRegex  = "^[A-Z]{1}[a-z]{2,}$";
-    Pattern pattern = Pattern.compile(firstNameRegex );
-    Matcher matcher = pattern.matcher(firstName);
-    return matcher.matches();
-
-	}
-    public boolean checkValidLastName(String lastName) {
-
-        boolean isLastName;
-        String lastNameRegex = "^[A-Z]{1}[a-z]{2,}$";
-        Pattern pattern = Pattern.compile(lastNameRegex);
-        Matcher matcher = pattern.matcher(lastName);
+        boolean isEmail;
+        String emailRegex = ("[a-z0-9@.]*");
+        Pattern patternObject = Pattern.compile(emailRegex);
+        Matcher matcher = patternObject.matcher(email);
         return matcher.matches();
-    }
+
+	
+}
 
     
 }
