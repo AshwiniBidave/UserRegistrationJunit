@@ -14,9 +14,9 @@ public class AppTest
 {
   
 	@Test
-    public void checkMobileNum(){
+    public void checkPassWordRule1(){
         UserRegistration ur=new UserRegistration();
-		assertEquals(true, ur.checkValidMobileNumber("91 9177777777"));
+		assertEquals(true, ur.passwordRule1("ashusoju"));
     }
     
 
