@@ -14,9 +14,9 @@ public class AppTest
 {
   
 	@Test
-    public void checkEmail(){
+    public void checkMobileNum(){
         UserRegistration ur=new UserRegistration();
-		assertEquals(true, ur.checkValidEmail("ashhhhbida1991@gami.com"));
+		assertEquals(true, ur.checkValidMobileNumber("91 9177777777"));
     }
     
 

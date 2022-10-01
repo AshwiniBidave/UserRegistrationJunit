@@ -3,12 +3,12 @@ package com.UserRegJunit;
 import java.util.regex.*;
 
 public class UserRegistration {
-	public boolean checkValidEmail(String email) {
+	public boolean checkValidMobileNumber(String mobileNumber) {
 
-        boolean isEmail;
-        String emailRegex = ("[a-z0-9@.]*");
-        Pattern patternObject = Pattern.compile(emailRegex);
-        Matcher matcher = patternObject.matcher(email);
+        boolean isMobileNumber;
+        String mobileRegex = "^(91){1}[ ]+[0-9]{10}$";
+        Pattern patternObject = Pattern.compile(mobileRegex);
+        Matcher matcher = patternObject.matcher(mobileNumber);
         return matcher.matches();
 
 	
