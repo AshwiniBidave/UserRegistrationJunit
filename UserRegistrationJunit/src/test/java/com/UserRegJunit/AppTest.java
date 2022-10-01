@@ -14,9 +14,9 @@ public class AppTest
 {
   
 	@Test
-    public void checkPassWordRule1(){
+    public void checkPassWordRule3(){
         UserRegistration ur=new UserRegistration();
-		assertEquals(true, ur.passwordRule1("Ashusoju"));
+		assertEquals(true, ur.passwordRule1("Ashusoju9"));
     }
     
 
